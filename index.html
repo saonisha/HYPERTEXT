@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(90deg, #ff7c5c, #ff8f8b);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #ff7c5c;
+            padding-bottom: 8px;
+            font-weight: 600;
+        }
+
+        section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        a {
+            color: #ff7c5c;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #ffe6e6;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        footer a {
+            font-weight: bold;
+            color: #ff7c5c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            footer {
+                font-size: 1em;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+
+        /* Beautiful background for each section */
+        section:nth-child(odd) {
+            background: #f9f9f9;
+        }
+
+        section:nth-child(even) {
+            background: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hyperlink Types Demonstration</h1>
+
+    <!-- Internal Link -->
+    <section>
+        <h2 id="internal-links">Internal Links</h2>
+        <p>
+            Internal links connect different pages or sections within the same website. For example:
+            <a href="#external-links" class="highlight">Jump to External Links Section</a>.
+        </p>
+    </section>
+
+    <!-- External Link -->
+    <section id="external-links">
+        <h2>External Links</h2>
+        <p>
+            External links navigate to content outside the current website. For instance:
+            <a href="https://www.wikipedia.org/" target="_blank" class="highlight">Visit Wikipedia</a>.
+        </p>
+    </section>
+
+    <!-- Anchor Links -->
+    <section id="anchor-links">
+        <h2>Anchor Links</h2>
+        <p>
+            Anchor links navigate within the same page. Click 
+            <a href="#internal-links" class="highlight">here</a> to go back to the Internal Links section.
+        </p>
+    </section>
+
+    <!-- Product Links -->
+    <section id="product-links">
+        <h2>Product Links</h2>
+        <p>
+            Product links lead to detailed product pages. For example:
+            <a href="https://www.amazon.com/dp/B07PGL2ZSL" target="_blank" class="highlight">Amazon Echo</a>.
+        </p>
+    </section>
+
+    <!-- Category Links -->
+    <section id="category-links">
+        <h2>Category Links</h2>
+        <p>
+            Category links direct users to grouped sections. For example:
+            <a href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155" target="_blank" class="highlight">Books on Amazon</a>.
+        </p>
+    </section>
+
+    <!-- Relative Links -->
+    <section id="relative-links">
+        <h2>Relative Links</h2>
+        <p>
+            Relative links navigate within the same website structure. For example:
+            <a href="about.html" class="highlight">About Us</a> page (assumes you have an `about.html` file).
+        </p>
+    </section>
+
+    <!-- Absolute Links -->
+    <section id="absolute-links">
+        <h2>Absolute Links</h2>
+        <p>
+            Absolute links use full URLs to reference content. For example:
+            <a href="https://www.freecodecamp.org/" target="_blank" class="highlight">FreeCodeCamp</a>.
+        </p>
+    </section>
+
+    <!-- Download Links -->
+    <section id="download-links">
+        <h2>Download Links</h2>
+        <p>
+            Download links allow users to get files. For example:
+            <a href="resources/sample.pdf" download class="highlight">Download a Sample PDF</a>.
+        </p>
+    </section>
+
+    <!-- News Article Links -->
+    <section id="news-article-links">
+        <h2>News Article Links</h2>
+        <p>
+            News article links navigate to individual stories. For example:
+            <a href="https://edition.cnn.com/" target="_blank" class="highlight">CNN News</a>.
+        </p>
+    </section>
+
+    <!-- Video Links -->
+    <section id="video-links">
+        <h2>Video Links</h2>
+        <p>
+            Video links embed or link to video content. For example:
+            <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" target="_blank" class="highlight">Watch a Video on YouTube</a>.
+        </p>
+    </section>
+
+    <!-- Email Links -->
+    <section id="email-links">
+        <h2>Email Links</h2>
+        <p>
+            Email links allow direct communication. Click to email us:
+            <a href="mailto:info@example.com" class="highlight">info@example.com</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>End of Hyperlink Showcase. <a href="#top" class="highlight">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
+
+
+
